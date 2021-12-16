@@ -17,6 +17,7 @@ router.post('/tasks', auth, async (req, res) => {
     }
 })
 
+// to get all the tasks of the authenticated user.
 router.get('/tasks', auth, async (req, res) => {
     try {
 
