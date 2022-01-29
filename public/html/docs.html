@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="doc">
+        <a href="/"><h1>Task-manager</h1></a>
+        <h1>Documentation</h1>
+        <h2>Routes</h2>
+        <h3>User routes</h3>
+        <ul>
+            <li>POST /users   (doesn't require authenticaion)</li>
+            <p>for signing up</p>
+            <li>POST /users/login   (doesn't require authenticaion)</li>
+            <p>for logging in</p>
+            <li>POST /users/logout</li>
+            <p>for logging out</p>
+            <li>POST /user/logoutall</li>
+            <p>for logging out from all sessions</p>
+            <li>GET /users/me</li>
+            <p>viewing your profile</p>
+            <li>PATCH /users/me</li>
+            <p>editing your profile</p>
+            <li>DELETE /users/me</li>
+            <p>deleting your account</p>
+            <li>POST /users/me/avatar</li>
+            <p>changing your profile picture</p>
+            <li>GET /users/:id/avatar</li>
+            <p>viewing your profile or any other user's</p>
+            <li>DELETE /users/me/avatar</li>
+            <p>Deleting your profile picture</p>
+        </ul>
+        <h3>Task routes</h3>
+        <ul>
+            <li>POST /tasks</li>
+            <p>creating a task</p>
+            <li>GET /tasks</li>
+            <p>viewing all created tasks</p>
+            <li>GET /tasks/:id</li>
+            <p>viewing a single task by its id</p>
+            <li>PATCH /tasks/:id</li>
+            <p>editing a task</p>
+            <li>DELETE /tasks/:id</li>
+            <p>deleting a task</p>
+        </ul>
+    </div>
+</body>
+</html>
