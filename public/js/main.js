@@ -1,6 +1,6 @@
 console.log("client side js");
 
-const sampleForm = document.querySelector("#sampleForm");
+const sampleForm = document.querySelector("#signupForm");
 // const username = document.querySelector("#name");
 // const email = document.querySelector("#email");
 // const password = document.querySelector("#password");
