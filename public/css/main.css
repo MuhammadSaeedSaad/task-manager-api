@@ -1,0 +1,166 @@
+body {
+    background-color: #f5f5f5;
+}
+
+/* start upper bar */
+#phonemail {
+    text-align: left;
+}
+
+#letswork {
+    text-align: right;
+}
+
+.upper-bar {
+    background-color: #dc3545;
+    color: rgb(255 255 255 / 87%);
+    padding: 0.5rem;
+}
+/* end upper bar */
+
+/* start navbar */
+.navbar {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+}
+
+div.collapse.navbar-collapse{
+    margin-right: 8rem;
+}
+
+/* navbar active link */
+
+.navbar-dark .navbar-nav .nav-link.active
+, .navbar-dark .navbar-nav .show>.nav-link {
+    background-color: #dc3545;
+}
+
+/* navbar link */
+.dropdown-item,
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255 255 255 / 87%);
+}
+
+/* dropdown menu */
+.dropdown-menu,
+.dropdown-item {
+    background-color: #212529;
+}
+
+.dropdown-item:hover {
+    background-color: #dc3545;
+    color: rgb(255 255 255 / 87%);
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+
+/* the divider line in dropdown */
+.dropdown-divider {
+    border-top: 2px solid rgb(255 255 255);
+}
+
+/* smallen the top and bottom padding of the whole dropdown menu */
+.dropdown-menu {
+    padding: 0.3rem 0;
+}
+
+/* make the anchor tag stretch to fill the parent li */
+.nav-link {
+    padding: 1rem 1rem;
+}
+
+/* increace the font-size of the Brand name */
+.navbar-brand {
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+
+.form-signup form h1 span,
+.navbar-brand span {
+    color: #dc3545;
+}
+
+/* change the font-size of the navigation links */
+.nav-item > .dropdown-menu > li > .dropdown-item,
+.navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+}
+
+/* navbar dropdown menu links padding */
+.dropdown-item {
+    padding: 0.5rem 1.5rem;
+    -webkit-transition:padding 0.5s ease;
+    -moz-transition:padding 0.5s ease;
+    -o-transition:padding 0.5s ease;
+    transition:padding 0.5s ease;
+}
+/* end navbar */
+
+/* start tasks content */
+.tasks {
+    margin-top: 3vh;
+}
+
+.task-item {
+    margin-bottom: 10px;
+    border: 2px solid white;
+}
+
+.task-item:hover {
+    border: 2px dotted black;
+    background-color: rgb(224, 224, 224);
+}
+
+.task-square {
+    text-decoration: none;
+    color: inherit;
+}
+/* end tasks content */
+
+/* start signup form */
+.form-signup {
+    width: 100%;
+    max-width: 35vw;
+    margin: auto;
+    padding: 5vw;
+}
+
+.logo {
+    height: 10vh;
+    width: 10vh;
+    margin-bottom: 3vh;
+}
+
+.form-signup form h1 {
+    margin-bottom: 3vh;
+}
+
+.form-signup input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signup input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-signup input[type="tel"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-signup input[type="password"] {
+    margin-bottom: 3vh;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/* end signup form */
