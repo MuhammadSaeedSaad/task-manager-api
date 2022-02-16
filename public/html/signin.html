@@ -87,24 +87,25 @@
       
       <!-- start signup form -->
       <main class="form-signup text-center">
-        <form action="submit">
-            <img src="/taskapp logo.png" alt class="logo">
-            <h1 class="">Sign <span>in</span></h1>
-            <div class="form-floating">
-                <input class="form-control" type="email" id="emailInput" placeholder="Email">
-                <label class="form-label" for="emailInput">Email</label>
-            </div>
-            <div class="form-floating">
-                <input class="form-control" type="password" id="passwordInput" placeholder="Password">
-                <label class="form-label" for="passwordInput">Password</label>
-            </div>
-            <div class="checkbox mb-3">
-                <label>
-                    <input type="checkbox" value="Agree">
-                     Keep me signed in
-                </label>
-            </div>
-            <button class="w-100 btn btn-lg btn-primary">Sign up</button>
+        <form method="post" action="/" id="signinForm">
+          <img src="/taskapp logo.png" alt class="logo">
+          <h1 class="">Sign <span>in</span></h1>
+          <p class="" role="alert" id="signinFormAlert"></p>
+          <div class="form-floating">
+              <input class="form-control" type="email" id="emailInput" placeholder="Email" name="email">
+              <label class="form-label" for="emailInput">Email</label>
+          </div>
+          <div class="form-floating">
+              <input class="form-control" type="password" id="passwordInput" placeholder="Password" name="password">
+              <label class="form-label" for="passwordInput">Password</label>
+          </div>
+          <div class="checkbox mb-3">
+              <label>
+                  <input type="checkbox" value="Agree">
+                    Keep me signed in
+              </label>
+          </div>
+          <button class="w-100 btn btn-lg btn-primary">Sign up</button>
         </form>
       </main>
       <!-- end signup form -->

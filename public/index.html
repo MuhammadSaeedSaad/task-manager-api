@@ -49,7 +49,7 @@
               </li>
               <!-- 3rd link and it is a dropdown -->
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTask" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Task
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -67,12 +67,12 @@
             <!-- end of the left content -->
             <div class="navbar-nav">
               <div class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownUser" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Username
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">profile</a></li>
-                  <li><a class="dropdown-item" href="#">Settings new</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Sign out</a></li>
                   <li><a class="dropdown-item" href="/html/signup.html">Sign up</a></li>
@@ -86,10 +86,11 @@
       <!-- end navbar -->
 
       <!-- start the tasks content -->
-      <div class="tasks text-center">
-        <div class="container">
-          <div class="row gx-5">
-            <div class="col-lg-3">
+      <div class="tasks text-center" id="tasksArea">
+        <div class="container" >
+          <div class="row gx-3 gy-3" id="tasksAreaContainer">
+
+            <!-- <div class="col-lg-3">
               <div class="task-item">
                 <a class="task-square" href="#">
                   <div>
@@ -101,48 +102,9 @@
                   </div>
                 </a>
               </div>
-            </div>
-            <div class="col-lg-3">
-              <div class="task-item">
-                <a class="task-square" href="#">
-                  <div>
-                    <i class="bi bi-check2-square"></i>
-                    <h2>task 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum saepe molestias deleniti quod minima quo, nesciunt rerum eaque, 
-                      vero doloremque, explicabo est quas.
-                      Eligendi tempore in dolore, eum sed nobis!</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <div class="task-item">
-                <a class="task-square" href="#">
-                  <div>
-                    <i class="bi bi-check2-square"></i>
-                    <h2>task 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum saepe molestias deleniti quod minima quo, nesciunt rerum eaque, 
-                      vero doloremque, explicabo est quas.
-                      Eligendi tempore in dolore, eum sed nobis!</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <div class="task-item">
-                <a class="task-square" href="#">
-                  <div>
-                    <i class="bi bi-check2-square"></i>
-                    <h2>task 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum saepe molestias deleniti quod minima quo, nesciunt rerum eaque, 
-                      vero doloremque, explicabo est quas.
-                      Eligendi tempore in dolore, eum sed nobis!</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            
-           
+            </div> -->
+
+          </div>
         </div>
       </div>
       <!-- end the tasks content -->
