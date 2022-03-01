@@ -16,21 +16,31 @@ router.post('/users', async (req, res) => {
         const token = await user.generateAuthToken()
         res.status(201).send({ user, token })
     } catch (e) {
-        // console.log(e);
-        res.status(400).send(e)
+        if (e.errors.password.path === "password" && e.errors.password.kind === "minlength") {
+            res.status(400).send({message: "password-too-shrot"});
+        } else if (e.code === 11000 && e.errmsg.includes("duplicate")) {
+            res.status(400).send({message: "duplicate-email"})
+        } else {
+            res.status(400).send({message: "internal-server-error"})
+        }
     }
 })
 
 router.post('/users/login', async (req, res) => {
     try {
         const user = await User.findByCredentials(req.body.email, req.body.password)
-        if (!user) {
+        
+        if (!user) {    // this if is not useful and it will never be entered as if there is no user returned an error will be thrown and will skip to catch directly
             res.send("email or passowrd is incorrect!")
         }
         const token = await user.generateAuthToken()
         res.send({ user, token })
     } catch (e) {
-        res.status(401).send({ error: "incorrect email or password!" })
+        if (e.message === "Unable to login"){
+            res.status(401).send({message: "incorrect-email-or-password"});
+        } else {
+            res.status(500).send();
+        }
         // if send()'s argument is a string it will not work as we used app.use(express.json())
     }
 })
